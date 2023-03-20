@@ -1,6 +1,4 @@
-# SupaFlipMan!!
-
-<img src="ReadmeFiles/LogoSFM.png" style="width:500px;"/><br>
+<img src="ReadmeFiles/LogoSFM.png" style="width:700px;"/><br><br>
 
 ## Project Description:
 
