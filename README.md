@@ -2,7 +2,7 @@
 
 ## Project Description:
 
-SupaFlipMan!! is a **beat'em all** game where you can **flip the board** to reveal a new room! <br>
+**SupaFlipMan!!** is a **beat'em all** game where you can **flip the board** to reveal a new room! <br>
 This game has been designed to be played with a gamepad.<br><br>
 For this project, I collaborated with a team of five game designers, one sound designer, and two other game programmers.
 
