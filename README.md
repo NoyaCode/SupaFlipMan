@@ -5,7 +5,7 @@
 **SupaFlipMan!!** is a **beat'em all** game where you can **flip the board** to reveal a new room! <br>
 This game has been designed to be played with a gamepad.<br><br>
 For this project, I collaborated with a team of five game designers, one sound designer, and two other game programmers.<br><br>
-The game is available for download on [itch.io](https://noyacode.itch.io)!
+The game is available for download on [itch.io](https://isart-abricot.itch.io/supaflipman)!
 
 <br />
 
