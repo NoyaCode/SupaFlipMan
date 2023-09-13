@@ -38,7 +38,7 @@ public class LiftEnemy : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if (!isGrounded && Physics.CheckSphere(groundCheck.position, .001f, groundLayer))
+        if (!isGrounded && Physics.CheckSphere(groundCheck.position, .001f, groundLayer) && rb.constraints != RigidbodyConstraints.FreezeAll)
         {
             StartCoroutine(DelayedGrouded());
             HurtBox.enabled = true;

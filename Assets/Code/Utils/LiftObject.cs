@@ -29,7 +29,7 @@ public class LiftObject : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if (!isGrounded && Physics.Raycast(transform.position, Vector3.down, out _, rayDistance, groundLayer.value))
+        if (!isGrounded && Physics.Raycast(transform.position, Vector3.down, out _, rayDistance, groundLayer.value) && rb.constraints != RigidbodyConstraints.FreezeAll)
         {
             AudioManager.audioInstance.PlaySound(46);
             pm.bounciness = 1;
@@ -44,9 +44,9 @@ public class LiftObject : MonoBehaviour
 
     public void Lift()
     {
-        print(rayDistance);
         if (isGrounded)
         {
+            transform.parent = null;
             pm.bounciness = 0;
             pm.dynamicFriction = 0;
             pm.staticFriction = 0;
@@ -54,7 +54,6 @@ public class LiftObject : MonoBehaviour
             rb.constraints = RigidbodyConstraints.FreezePositionZ | RigidbodyConstraints.FreezePositionX | RigidbodyConstraints.FreezeRotation;
             transform.position = new Vector3(transform.position.x, transform.position.y + 0.1f, transform.position.z);
             rb.AddForce(Vector3.up * liftForce, ForceMode.VelocityChange);
-            transform.parent = null;
         }
     }
 }

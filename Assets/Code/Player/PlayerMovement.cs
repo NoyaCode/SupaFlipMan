@@ -9,6 +9,7 @@ public class PlayerMovement : MonoBehaviour
     private Animator animator;
     private PlayerAnimationEvents playerAnimationEvents;
 
+    [Header("Movement")]
     public bool canMove = true;
     public float playerSpeed = 8f;
     public float turnSmoothTime = 0.1f;
